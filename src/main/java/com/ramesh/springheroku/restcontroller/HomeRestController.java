@@ -12,7 +12,12 @@ public class HomeRestController {
 
 	@GetMapping
 	public String hello(){
-		return "Hello Ramesh How are you?";
+		return "Hello docker container..";
+	}
+
+	@GetMapping("welcome")
+	public String welcome(){
+		return "Welcome Mr.Ramesh, This is docker image";
 	}
 
 }
