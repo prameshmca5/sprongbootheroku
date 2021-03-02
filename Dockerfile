@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:8-jdk
 EXPOSE 8080
-ADD target/springheroku-0.0.1-SNAPSHOT.jar springheroku-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","/springheroku-0.0.1-SNAPSHOT.jar"]
+ADD target/spring-heroku-app.jar spring-heroku-app.jar
+ENTRYPOINT ["java","-jar","/spring-heroku-app.jar"]
