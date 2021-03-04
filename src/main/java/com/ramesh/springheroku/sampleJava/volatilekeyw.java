@@ -8,19 +8,24 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class volatilekeyw {
-
     public static void main(String[] args) {
-        System.out.println("Hello welcome test");
+        String str = "aSONEYBBn";
+        String midword = "SONEY";
+        String[] chkStr = str.split(midword);
+        String lftStr = chkStr[0];
+        String rhtStr = chkStr[1];
 
+        // Get Length
+        int lftStrLen = lftStr.length();
+        int rhtStrLen = rhtStr.length();
 
-        List stt = new ArrayList();
-        stt.add("Ramesh");
-        stt.add("Amutha");
-        stt.add("Laxha");
-        stt.add("Maha");
-
-        Collections.reverse(stt);
-
-
+        if(lftStrLen==rhtStrLen){
+            System.out.println("true");
+        }else if(lftStrLen<rhtStrLen){
+            System.out.println("false");
+        }else if(lftStrLen>rhtStrLen){
+            System.out.println("false");
+        }
     }
+
 }
